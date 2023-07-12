@@ -1,10 +1,14 @@
+import React, { useState } from "react";
 import "./styles.css";
 
 export default function App() {
+  const [_, setText] = useState("");
   return (
-    <div className="App">
-      <h1>Hello CodeSandbox</h1>
-      <h2>Start editing to see some magic happen!</h2>
+    <div>
+      <header>This is a header component</header>
+      <main>
+        <input type="text" onChange={(e) => setText(e.target.value)} />
+      </main>
     </div>
   );
 }

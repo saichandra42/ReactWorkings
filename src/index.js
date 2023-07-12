@@ -11,3 +11,6 @@ root.render(
     <App />
   </StrictMode>
 );
+
+console.info("The app function/class compiles into an object");
+console.info(<App />);
